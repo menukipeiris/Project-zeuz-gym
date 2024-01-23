@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="classes" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="16ac9b23-0794-45bc-8cd8-d8d287a29326">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM service]]>
+	</queryString>
+	<field name="serviceId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="serviceId"/>
+		<property name="com.jaspersoft.studio.field.label" value="serviceId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="service"/>
+	</field>
+	<field name="trainerId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="trainerId"/>
+		<property name="com.jaspersoft.studio.field.label" value="trainerId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="service"/>
+	</field>
+	<field name="trainerName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="trainerName"/>
+		<property name="com.jaspersoft.studio.field.label" value="trainerName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="service"/>
+	</field>
+	<field name="classType" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="classType"/>
+		<property name="com.jaspersoft.studio.field.label" value="classType"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="service"/>
+	</field>
+	<field name="time" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="time"/>
+		<property name="com.jaspersoft.studio.field.label" value="time"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="service"/>
+	</field>
+	<field name="date" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="date"/>
+		<property name="com.jaspersoft.studio.field.label" value="date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="service"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="53" splitType="Stretch">
+			<staticText>
+				<reportElement x="167" y="11" width="220" height="30" uuid="415ae19d-8800-45ba-a646-46ef37c5e8b6"/>
+				<textElement>
+					<font size="16" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Manage fitness classes]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="39" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="80" height="30" uuid="cefdfa60-7bc1-4db0-a1b2-b1329e687c3d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ebe10cd1-8f7a-4d55-baa6-9d245f243a27"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ServiceId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="90" height="30" uuid="cb769bf0-cc6e-4809-b701-ef52d0be4d35">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1ae66574-851c-48d1-a1db-78f79f01540b"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TrainerId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="0" width="100" height="30" uuid="bccc4736-d6cb-40d9-86a2-d04ccc03b230">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="21e0eb36-7f14-45b4-95d8-b9eff49ab902"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TrainerName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="0" width="100" height="30" uuid="2a4da49d-5cec-4eb2-ae71-2e32cd2bb356">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9644aef2-41f8-4323-ad58-67956340e13f"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ClassType]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="0" width="66" height="30" uuid="2392ba39-7e7c-480b-9919-b62ea5e0c08f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e371d9c4-f374-470c-9449-7ebbd5ea0520"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="513" y="0" width="62" height="30" uuid="84ff71e9-7b87-404c-968d-17d76adff25c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="79862a45-0e16-47d5-b686-d1b79f4b7ce6"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="50" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="10" width="80" height="30" uuid="e626b669-6d83-4acd-8e81-8f44cb21cef6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ebe10cd1-8f7a-4d55-baa6-9d245f243a27"/>
+				</reportElement>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{serviceId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="8" width="90" height="30" uuid="825800f2-72b2-4ded-a977-1806fcf861bf">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1ae66574-851c-48d1-a1db-78f79f01540b"/>
+				</reportElement>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{trainerId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="8" width="100" height="30" uuid="865f5f49-39f5-4083-923e-cd5e2f664541">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="21e0eb36-7f14-45b4-95d8-b9eff49ab902"/>
+				</reportElement>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{trainerName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="8" width="100" height="30" uuid="88186329-5b16-4b96-a925-86d3a2fbe144">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9644aef2-41f8-4323-ad58-67956340e13f"/>
+				</reportElement>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{classType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="8" width="56" height="30" uuid="245bc443-fca1-4efd-b26d-613e80afbbf0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e371d9c4-f374-470c-9449-7ebbd5ea0520"/>
+				</reportElement>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{time}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="510" y="10" width="62" height="20" uuid="7ff1aa94-328e-48be-b7d5-9e465456e9d8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="79862a45-0e16-47d5-b686-d1b79f4b7ce6"/>
+				</reportElement>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

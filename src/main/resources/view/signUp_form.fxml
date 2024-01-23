@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root1" opacity="0.86" prefHeight="1137.0" prefWidth="1937.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gym.controller.SignUpFormController">
+   <children>
+      <ImageView fitHeight="1137.0" fitWidth="1937.0" opacity="0.41">
+         <image>
+            <Image url="@../icon/gymCover.jpg" />
+         </image>
+         <effect>
+            <BoxBlur />
+         </effect>
+      </ImageView>
+      <AnchorPane layoutX="659.0" layoutY="73.0" prefHeight="887.0" prefWidth="620.0" style="-fx-background-color: #227093;">
+         <children>
+            <TextField fx:id="txtEmail" layoutX="193.0" layoutY="205.0" prefHeight="45.0" prefWidth="264.0" promptText="Email">
+               <font>
+                  <Font size="16.0" />
+               </font></TextField>
+            <Label layoutX="34.0" layoutY="341.0" prefHeight="24.0" prefWidth="115.0" text="Username">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="txtName" layoutX="193.0" layoutY="321.0" prefHeight="64.0" prefWidth="264.0" promptText="User name">
+               <font>
+                  <Font size="16.0" />
+               </font></TextArea>
+            <Label layoutX="34.0" layoutY="215.0" prefHeight="24.0" prefWidth="104.0" text="Email">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="468.0" prefHeight="24.0" prefWidth="123.0" text="Password">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPassword" layoutX="193.0" layoutY="457.0" prefHeight="45.0" prefWidth="264.0" promptText="Password">
+               <font>
+                  <Font size="16.0" />
+               </font></TextField>
+            <Button layoutX="242.0" layoutY="599.0" mnemonicParsing="false" onAction="#btnRegisterOnAction" prefHeight="36.0" prefWidth="136.0" style="-fx-background-color: black;" text="Register" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="96.0" fitWidth="200.0" layoutX="231.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/SignUp1.png" />
+               </image>
+            </ImageView>
+            <Hyperlink layoutX="272.0" layoutY="650.0" onAction="#hyperLoginHereOnAction" text="Login" textFill="#030303">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Hyperlink>
+            <Label layoutX="221.0" layoutY="841.0" text="www.zeuzGym.com">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="75.0" fitWidth="312.0" layoutX="169.0" layoutY="727.0">
+               <image>
+                  <Image url="@../icon/logo.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Workouts" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0dd779b5-1c94-4c38-830d-53eae796aa1c">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM workoutPlan]]>
+	</queryString>
+	<field name="planId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="planId"/>
+		<property name="com.jaspersoft.studio.field.label" value="planId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="workoutPlan"/>
+	</field>
+	<field name="warmUp" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="warmUp"/>
+		<property name="com.jaspersoft.studio.field.label" value="warmUp"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="workoutPlan"/>
+	</field>
+	<field name="training" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="training"/>
+		<property name="com.jaspersoft.studio.field.label" value="training"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="workoutPlan"/>
+	</field>
+	<field name="cardio" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="cardio"/>
+		<property name="com.jaspersoft.studio.field.label" value="cardio"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="workoutPlan"/>
+	</field>
+	<field name="warmDown" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="warmDown"/>
+		<property name="com.jaspersoft.studio.field.label" value="warmDown"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="workoutPlan"/>
+	</field>
+	<group name="planId">
+		<groupExpression><![CDATA[$F{planId}]]></groupExpression>
+	</group>
+	<group name="warmUp">
+		<groupExpression><![CDATA[$F{warmUp}]]></groupExpression>
+	</group>
+	<group name="training">
+		<groupExpression><![CDATA[$F{training}]]></groupExpression>
+	</group>
+	<group name="cardio">
+		<groupExpression><![CDATA[$F{cardio}]]></groupExpression>
+	</group>
+	<group name="warmDown">
+		<groupExpression><![CDATA[$F{warmDown}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="197" y="24" width="160" height="30" uuid="0549bc43-a6cc-4003-8311-0e42e53e6e10"/>
+				<textElement>
+					<font size="16" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Work out plans]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="37" splitType="Stretch">
+			<staticText>
+				<reportElement x="-4" y="0" width="84" height="30" uuid="4128204c-686e-4bc6-8fb4-881e7ff263dd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b5a70dd3-4d95-4e97-a74b-6bd9fa7e7cf4"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PlanId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="0" width="100" height="30" uuid="108f9041-632b-4905-8a0f-29e7940e3791">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="78dc6d1a-afc8-4921-b899-a3330783c99f"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[WarmUp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="0" width="100" height="30" uuid="5107dd23-cf36-4e56-8740-52a4dcbb7b1e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cad08766-e8b9-429f-9e1e-484395c857fd"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Training]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="3" width="100" height="30" uuid="7a6dbdbc-4fb7-4fc4-91b8-c86786f54b9d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1492b3a7-336c-4933-9e66-56788ddc6f53"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cardio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="0" width="100" height="30" uuid="d7ed19e2-85f0-4603-a108-5839ff23d401">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="366cd26c-9a25-4bf6-a8ff-3a500e5afe29"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[WarmDown]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="67" splitType="Stretch">
+			<textField>
+				<reportElement x="-4" y="0" width="84" height="30" uuid="63512bab-ae2c-4969-80b6-a90913d0d0ae">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b5a70dd3-4d95-4e97-a74b-6bd9fa7e7cf4"/>
+				</reportElement>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{planId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="0" width="100" height="30" uuid="fe5a0219-71c0-47ee-8e74-67fd3c670639">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="78dc6d1a-afc8-4921-b899-a3330783c99f"/>
+				</reportElement>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{warmUp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="0" width="100" height="30" uuid="9ec0296f-354d-45be-ac89-a1694f58c7fe">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cad08766-e8b9-429f-9e1e-484395c857fd"/>
+				</reportElement>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{training}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="0" width="100" height="30" uuid="cedaa319-bf14-412f-9209-a9b766f4663e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1492b3a7-336c-4933-9e66-56788ddc6f53"/>
+				</reportElement>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cardio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="0" width="100" height="30" uuid="f2605ba8-8e84-486b-87b1-3025d7aab19a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="366cd26c-9a25-4bf6-a8ff-3a500e5afe29"/>
+				</reportElement>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{warmDown}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

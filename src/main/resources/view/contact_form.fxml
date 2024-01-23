@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1043.0" prefWidth="1739.0" style="-fx-background-color: #dff9fb;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gym.controller.ContactFormController">
+   <children>
+      <ImageView fitHeight="711.0" fitWidth="645.0" layoutX="547.0" layoutY="185.0">
+         <image>
+            <Image url="@../icon/icon.png" />
+         </image>
+      </ImageView>
+      <SplitPane orientation="VERTICAL" prefHeight="115.0" prefWidth="1739.0" style="-fx-background-color: #22a6b3;">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="115.0" layoutY="39.0" text="CONTACT US">
+                     <font>
+                        <Font name="System Bold Italic" size="29.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <SplitPane layoutY="928.0" orientation="VERTICAL" prefHeight="115.0" prefWidth="1739.0" style="-fx-background-color: #22a6b3;">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+         </items>
+      </SplitPane>
+      <ImageView fitHeight="89.0" fitWidth="439.0" layoutX="650.0" layoutY="125.0">
+         <image>
+            <Image url="@../icon/logo.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="83.0" fitWidth="89.0" layoutX="10.0" layoutY="10.0">
+         <image>
+            <Image url="@../icon/contact-me.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
